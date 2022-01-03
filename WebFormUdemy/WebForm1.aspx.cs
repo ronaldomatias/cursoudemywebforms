@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Build.Framework.XamlTypes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,34 +13,25 @@ namespace WebFormUdemy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Table tabela = new Table();
+            BulletedList1.DataSource = PopularDropDownList();
+            BulletedList1.DataTextField = "Nome";
+            BulletedList1.DataBind();
 
-            for(int linha = 0; linha<=2; linha++)
-            {
-                TableRow linhas = new TableRow();
-                
-                for (int coluna = 0; coluna <= 1; coluna++)
-                {
-                    TableCell colunas = new TableCell();
-                    colunas.Text = PegaCursos(linha, coluna);
-                    linhas.Cells.Add(colunas);
-                }
-                tabela.Rows.Add(linhas);
-            }
-            
+            PlaceHolder1.Controls.Add(BulletedList1);
         }
 
-        private string PegaCursos(int linha, int coluna)
+        
+        public List<Pessoa> PopularDropDownList()
         {
-            string[,] vetorCursos = new string[3, 2];
-            vetorCursos[0, 0] = "Código curso";
-            vetorCursos[0, 1] = "Descricao curso";
-            vetorCursos[1, 0] = "1";
-            vetorCursos[1, 1] = "Android";
-            vetorCursos[2, 0] = "2";
-            vetorCursos[2, 1] = "Java";
+            Pessoa pessoa1 = new Pessoa("Ronaldo", 25);
+            Pessoa pessoa2 = new Pessoa("Matias", 21);
+            Pessoa pessoa3 = new Pessoa("Medeiros", 22);
+            List<Pessoa> lista = new List<Pessoa>();
+            lista.Add(pessoa1);
+            lista.Add(pessoa2);
+            lista.Add(pessoa3);
 
-            return vetorCursos[linha, coluna].ToString();
+            return lista;
         }
     }
 }

@@ -10,6 +10,8 @@
     <form id="form1" runat="server">
         <div style="height: 124px; background-color: #660066; color: #FFFFFF;" id="firstDiv" contenteditable="true" dir="ltr">
             <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+            <asp:BulletedList ID="BulletedList1" runat="server">
+            </asp:BulletedList>
             <asp:Table ID="Table1" runat="server" Height="88px" Width="314px">
             </asp:Table>
         </div>
