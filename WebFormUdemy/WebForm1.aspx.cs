@@ -12,23 +12,34 @@ namespace WebFormUdemy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DropDownList1.DataSource = PopularDropDownList();
-            DropDownList1.DataValueField = "cpf";
-            DropDownList1.DataTextField = "Nome";
-            DropDownList1.DataBind();
+            Table tabela = new Table();
+
+            for(int linha = 0; linha<=2; linha++)
+            {
+                TableRow linhas = new TableRow();
+                
+                for (int coluna = 0; coluna <= 1; coluna++)
+                {
+                    TableCell colunas = new TableCell();
+                    colunas.Text = PegaCursos(linha, coluna);
+                    linhas.Cells.Add(colunas);
+                }
+                tabela.Rows.Add(linhas);
+            }
+            
         }
 
-        public List<Pessoa> PopularDropDownList()
+        private string PegaCursos(int linha, int coluna)
         {
-            Pessoa pessoa1 = new Pessoa("Ronaldo", 25);
-            Pessoa pessoa2 = new Pessoa("Matias", 21);
-            Pessoa pessoa3 = new Pessoa("Medeiros", 22);
-            List<Pessoa> lista = new List<Pessoa>();
-            lista.Add(pessoa1);
-            lista.Add(pessoa2);
-            lista.Add(pessoa3);
+            string[,] vetorCursos = new string[3, 2];
+            vetorCursos[0, 0] = "Código curso";
+            vetorCursos[0, 1] = "Descricao curso";
+            vetorCursos[1, 0] = "1";
+            vetorCursos[1, 1] = "Android";
+            vetorCursos[2, 0] = "2";
+            vetorCursos[2, 1] = "Java";
 
-            return lista;
+            return vetorCursos[linha, coluna].ToString();
         }
     }
 }
