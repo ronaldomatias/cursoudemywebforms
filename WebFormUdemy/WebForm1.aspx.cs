@@ -11,7 +11,12 @@ namespace WebFormUdemy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblTitulo.Text = "Texto Original";
+        }
 
+        protected void mudarTextoDoLabel(object sender, EventArgs e)
+        {
+            lblTitulo.Text = "Texto modificado";
         }
     }
 }
