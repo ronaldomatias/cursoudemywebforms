@@ -11,7 +11,7 @@
         .div1 {
             display: block;
             text-align: center;
-            background-color: yellow;
+            background-color: palegreen;
             height: 380px;
         }
 
@@ -19,32 +19,40 @@
             display: inline-block;
             text-align: center;
             background-color: forestgreen;
-            height: 265px;
-            width: 220px;
+            height: 155px;
+            width: 191px;
         }
     </style>
 
 </head>
 <body>
     <form id="form1" runat="server">
-
         <div class="div1" runat="server">
-            <h1 id="titulo" runat="server">Cadastro de amigos</h1>
+            <h1 id="titulo" runat="server">Aulas WebForms</h1>
+
+            <asp:Panel runat="server">
                 <div class="div2" runat="server">
-                <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible="true" >
-                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
                     <br />
-                    <asp:TextBox ID="TextBox1" Width="190px" runat="server"></asp:TextBox>
-                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
                     <br />
-                    <asp:TextBox ID="TextBox2" Width="190px" runat="server"></asp:TextBox>
+                    <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
                     <br />
-                    <asp:Button id="botao" Text="ON" Width="100px" Height="15px" runat="server" OnClick="ComponentesInvisiveis"/>
-                </asp:PlaceHolder>
-            </div>
+                    <br />
+                    <asp:Button runat="server" Height="20px" Text="Botao" Width="69px" />
+                </div>
+
+                <div class="div2" runat="server">
+                    <asp:Label ID="Label2" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
+                    <br />
+                    <br />
+                    <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:Button runat="server" Height="20px" Text="Botao" Width="69px" />
+                </div>
+            </asp:Panel>
 
         </div>
     </form>
-
 </body>
 </html>

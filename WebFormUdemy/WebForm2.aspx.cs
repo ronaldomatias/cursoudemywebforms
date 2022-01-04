@@ -13,10 +13,7 @@ namespace WebFormUdemy
         protected void Page_Load(object sender, EventArgs e)
         {
         }
-
-       protected void ComponentesInvisiveis(object sender, EventArgs e)
-        {
-            PlaceHolder1.Visible = false;
-        }
+      
+       
     }
 }
