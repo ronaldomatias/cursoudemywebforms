@@ -14,6 +14,9 @@ namespace WebFormUdemy
         {
         }
 
-       
+       protected void ComponentesInvisiveis(object sender, EventArgs e)
+        {
+            PlaceHolder1.Visible = false;
+        }
     }
 }

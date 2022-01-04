@@ -31,14 +31,16 @@
         <div class="div1" runat="server">
             <h1 id="titulo" runat="server">Cadastro de amigos</h1>
                 <div class="div2" runat="server">
-                <asp:Panel ID="PlaceHolder1" runat="server" Visible="false" Width="219px">
+                <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible="true" >
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                     <br />
                     <asp:TextBox ID="TextBox1" Width="190px" runat="server"></asp:TextBox>
                     <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
                     <br />
                     <asp:TextBox ID="TextBox2" Width="190px" runat="server"></asp:TextBox>
-                </asp:Panel>
+                    <br />
+                    <asp:Button id="botao" Text="ON" Width="100px" Height="15px" runat="server" OnClick="ComponentesInvisiveis"/>
+                </asp:PlaceHolder>
             </div>
 
         </div>
