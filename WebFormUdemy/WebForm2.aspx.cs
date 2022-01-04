@@ -16,7 +16,7 @@ namespace WebFormUdemy
 
         protected void EnviarNome(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('" +txtNome.Text+ "') </script");
+            Response.Write(Request["txtNome"]);
         }
     }
 }
