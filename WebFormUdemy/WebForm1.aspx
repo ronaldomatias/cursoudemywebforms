@@ -4,43 +4,49 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta charset="utf-8" />
     <title>Título da página</title>
     <style>
-        .container1 {
-            width: 400px;
-            height: 200px;
-            text-align: center;
-            margin: auto;
-            background-color: cornflowerblue;
+        
+        .d-inline {
+           display:inline;
+           background-color: blueviolet;
+           text-align: center;
+           margin-bottom: 3px;
+           width: 100px; /* nao funciona */
+           height: 50px; /* nao funciona */
         }
-        .campo{
-            padding: 5px;
-            background-color: brown;
-            margin: 2px;
-            width: 386px;
-            align-content: center;
+         .d-block {
+           display:block;
+           background-color: blueviolet;
+           text-align: center;
+           margin-bottom: 3px;
+           height: 50px;
         }
-        .campo input[type="text"]{
-            width: 200px;
-            float: right;
-        }
+         .d-Inline-Block {
+             display:inline-block;
+             background-color: blueviolet;
+             margin-bottom: 3px;
+             width: 100px;
+             height: 50px;
+         }
+        
     </style>
 </head>
-<body>
-    <form id="form1" runat="server">
-        <div class="container1">
-            <h1>Cadastro de produtos</h1>
+<body>      
+            <h1>Display Inline</h1>
+            <div class="d-inline">Container1</div>
+            <div class="d-inline">Container2</div>
+            <div class="d-inline">Container3</div>
 
-            <div class="campo">
-                <label for="txtNome">Nome:</label>
-                <input type="text" id="txtNome"/>
-            </div>
-            <div class="campo">
-                 <label for="txtEmail">Email:</label>
-                 <input type="text" id="txtEmail" />
-            </div>
+            <h1>Display Block</h1>
+            <div class="d-block">Container1</div>
+            <div class="d-block">Container2</div>
+            <div class="d-block">Container3</div>
 
-        </div>
-    </form>
+            <h1>Display Inline-Block</h1>
+            <div class="d-Inline-Block">Container1</div>
+            <div class="d-Inline-Block">Container2</div>
+            <div class="d-Inline-Block">Container3</div>
 </body>
 </html>
