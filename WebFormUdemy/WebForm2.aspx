@@ -19,7 +19,7 @@
             display: inline-block;
             text-align: center;
             background-color: forestgreen;
-            height: 231px;
+            height: 265px;
             width: 220px;
         }
     </style>
@@ -36,15 +36,17 @@
                 <asp:TextBox ID="txtNome" Style="width: 200px; height: 20px" runat="server" />
                 <asp:Label ID="lblEmail" Text="E-mail:" runat="server" />
                 <asp:TextBox ID="txtEmail" Style="width: 200px; height: 20px" runat="server" />
-                <p style="height: 7px" />
-                <asp:Button Text="Clique" Width="50px" Height="23px" runat="server" PostBackUrl="http://www.ibid.com.br" />
-                <p style="height: 7px" />
-                <p style="height: 7px" />
-                <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/Imagens/Logotipo IBID Alta Resolucao.png" ImageWidth="35px" ImageHeight="70px" NavigateUrl="http://www.ibid.com.br">HyperLink</asp:HyperLink>
-
+                <p style="height: 4px" />
+                <asp:LinkButton runat="server" OnClientClick="funcaoJavaScript()">Botao</asp:LinkButton>
             </div>
-
         </div>
     </form>
+    <script type="text/javascript">
+        function funcaoJavaScript() {
+            javascript: alert("Ao clicar em 'OK' você será direcionado para outra página!");
+            javascript: window.open("http://www.ibid.com.br");
+        }
+    </script>
+
 </body>
 </html>
