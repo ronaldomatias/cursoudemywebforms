@@ -30,23 +30,19 @@
 
         <div class="div1" runat="server">
             <h1 id="titulo" runat="server">Cadastro de amigos</h1>
-
-            <div class="div2" runat="server">
-                <asp:Label ID="lblNome" Text="Nome:" runat="server" />
-                <asp:TextBox ID="txtNome" Style="width: 200px; height: 20px" runat="server" />
-                <asp:Label ID="lblEmail" Text="E-mail:" runat="server" />
-                <asp:TextBox ID="txtEmail" Style="width: 200px; height: 20px" runat="server" />
-                <p style="height: 4px" />
-                <asp:LinkButton runat="server" OnClientClick="funcaoJavaScript()">Botao</asp:LinkButton>
+                <div class="div2" runat="server">
+                <asp:Panel ID="PlaceHolder1" runat="server" Visible="false" Width="219px">
+                    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    <br />
+                    <asp:TextBox ID="TextBox1" Width="190px" runat="server"></asp:TextBox>
+                    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                    <br />
+                    <asp:TextBox ID="TextBox2" Width="190px" runat="server"></asp:TextBox>
+                </asp:Panel>
             </div>
+
         </div>
     </form>
-    <script type="text/javascript">
-        function funcaoJavaScript() {
-            javascript: alert("Ao clicar em 'OK' você será direcionado para outra página!");
-            javascript: window.open("http://www.ibid.com.br");
-        }
-    </script>
 
 </body>
 </html>
