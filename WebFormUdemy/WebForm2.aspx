@@ -12,7 +12,7 @@
             display: block;
             text-align: center;
             background-color: palegreen;
-            height: 380px;
+            height: 507px;
         }
 
         .div2 {
@@ -30,28 +30,19 @@
         <div class="div1" runat="server">
             <h1 id="titulo" runat="server">Aulas WebForms</h1>
 
-            <asp:Panel runat="server">
-                <div class="div2" runat="server">
-                    <asp:Label ID="Label1" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
-                    <br />
-                    <br />
-                    <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    <asp:Button runat="server" Height="20px" Text="Botao" Width="69px" />
-                </div>
-
-                <div class="div2" runat="server">
-                    <asp:Label ID="Label2" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
-                    <br />
-                    <br />
-                    <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
-                    <br />
-                    <br />
-                    <asp:Button runat="server" Height="20px" Text="Botao" Width="69px" />
-                </div>
+            <asp:Panel ID="Panel1"  runat="server" Width="130px" >
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button1" />
+                <asp:Button ID="Button2" runat="server" Text="Botao2" OnClick="Button2_Click" />
             </asp:Panel>
 
+            <asp:Panel ID="painel" GroupingText="Painel1" BackColor="Yellow" runat="server" Width="540px">
+                <asp:Label ID="Label1" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
+                <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
+                <asp:Button ID="botao1" runat="server" Height="20px" Text="Botao" Width="69px" />
+            </asp:Panel>
+
+            <asp:Panel ID="painel2" Visible="false" GroupingText="Painel2" BackColor="blue" runat="server" Width="539px">
+            </asp:Panel>
         </div>
     </form>
 </body>
