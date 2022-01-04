@@ -12,27 +12,19 @@ namespace WebFormUdemy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Label label1 = new Label();
-            label1.Text = "Bem-vindo! Insira seu nome.";
-            TextBox txt = new TextBox();
-            Button botao = new Button();
-            botao.Text = "Salvar";
 
-            painel2.Controls.Add(label1);
-            painel2.Controls.Add(txt);
-            painel2.Controls.Add(botao);
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void rbMasc_CheckedChanged(object sender, EventArgs e)
         {
-            painel2.Visible = false;
-            painel.Visible = true;
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            painel.Visible = false;
-            painel2.Visible = true;
+            if (rbuton.SelectedValue == "0")
+            {
+                lblSexo.Text = "tchau";
+            }
+            else if(rbuton.SelectedValue == "1")
+            {
+                lblSexo.Text = "oi";
+            }
         }
     }
 }

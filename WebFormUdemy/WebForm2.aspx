@@ -30,19 +30,14 @@
         <div class="div1" runat="server">
             <h1 id="titulo" runat="server">Aulas WebForms</h1>
 
-            <asp:Panel ID="Panel1"  runat="server" Width="130px" >
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button1" />
-                <asp:Button ID="Button2" runat="server" Text="Botao2" OnClick="Button2_Click" />
-            </asp:Panel>
+            <div class="div2" runat="server">
+                    <asp:RadioButtonList runat="server" ID="rbuton" AutoPostBack="True" OnSelectedIndexChanged="rbMasc_CheckedChanged" Width="187px">
+                        <asp:ListItem Value="0">Masculino</asp:ListItem>
+                        <asp:ListItem Value="1">Feminino</asp:ListItem>
+                    </asp:RadioButtonList>
+                <asp:Label ID="lblSexo" runat="server">Escolha</asp:Label>
+            </div>
 
-            <asp:Panel ID="painel" GroupingText="Painel1" BackColor="Yellow" runat="server" Width="540px">
-                <asp:Label ID="Label1" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
-                <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
-                <asp:Button ID="botao1" runat="server" Height="20px" Text="Botao" Width="69px" />
-            </asp:Panel>
-
-            <asp:Panel ID="painel2" Visible="false" GroupingText="Painel2" BackColor="blue" runat="server" Width="539px">
-            </asp:Panel>
         </div>
     </form>
 </body>
