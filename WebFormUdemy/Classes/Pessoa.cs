@@ -8,12 +8,12 @@ namespace WebFormUdemy.Classes
     public class Pessoa
     {
         public string Nome { get; set; }
-        public int cpf { get; set; }
+        public string Email { get; set; }
 
-        public Pessoa(string nome, int cpf)
+        public Pessoa(string nome, string email)
         {
             this.Nome = nome;
-            this.cpf = cpf;
+            this.Email = email;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using Microsoft.Build.Framework.XamlTypes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,12 +8,15 @@ using WebFormUdemy.Classes;
 
 namespace WebFormUdemy
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class WebForm2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
         }
 
-       
+        protected void EnviarNome(object sender, EventArgs e)
+        {
+
+        }
     }
 }
