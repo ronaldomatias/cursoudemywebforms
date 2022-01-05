@@ -29,10 +29,19 @@
     text-align: center;
 }
 
-.divRadioButton{
-    margin:0 auto;
+.divRadioButtonExterna {
+    text-align: center;
+    background-color: cornflowerblue;
+    height: 50px;
+    margin: 0 auto;
 }
-
+.divRadioButtonInterna {
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    margin-left: 170px;
+    margin-right: 200px;
+    text-align: left;
+}
 
 .direita {
     height: 500px;

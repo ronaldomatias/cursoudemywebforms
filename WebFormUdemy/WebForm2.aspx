@@ -23,18 +23,19 @@
         </div>
 
         <div class="centro" runat="server">
+            <div class="divRadioButtonExterna" runat="server">
 
-            <div class="multiView" runat="server">
-
-                <div class="divRadioButton" runat="server">
-                    <asp:RadioButtonList runat="server" ID="rbuton" OnSelectedIndexChanged="rbMasc_CheckedChanged" Width="187px" AutoPostBack="True">
+                <div class="divRadioButtonInterna" runat="server">
+                    <asp:RadioButtonList runat="server" ID="rbuton" OnSelectedIndexChanged="rbMasc_CheckedChanged" AutoPostBack="True">
                         <asp:ListItem Value="0">Masculino</asp:ListItem>
                         <asp:ListItem Value="1">Feminino</asp:ListItem>
                     </asp:RadioButtonList>
                 </div>
 
+            </div>
+            <br />
+            <div class="divMultiView">
                 <asp:MultiView ID="multiView" runat="server" ActiveViewIndex="0">
-
                     <asp:View runat="server">
                         <asp:Panel BackColor="blue" runat="server">
                             <asp:Label ID="Label1" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
@@ -42,7 +43,6 @@
                             <asp:Button ID="botao1" runat="server" Height="20px" Text="Botao" Width="69px" />
                         </asp:Panel>
                     </asp:View>
-
                     <asp:View runat="server">
                         <asp:Panel BackColor="yellow" runat="server">
                             <asp:Label ID="Label2" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
@@ -50,7 +50,6 @@
                             <asp:Button ID="botao2" runat="server" Height="20px" Text="Botao" Width="69px" />
                         </asp:Panel>
                     </asp:View>
-
                 </asp:MultiView>
             </div>
 
