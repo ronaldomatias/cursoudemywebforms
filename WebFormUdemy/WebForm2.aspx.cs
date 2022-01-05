@@ -15,6 +15,16 @@ namespace WebFormUdemy
 
         }
 
-       
+        protected void rbMasc_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbuton.SelectedValue == "0")
+            {
+                multiView.ActiveViewIndex = 0;
+            }
+            else if (rbuton.SelectedValue.Equals("1"))
+            {
+                multiView.ActiveViewIndex = 1;
+            }
+        }
     }
 }

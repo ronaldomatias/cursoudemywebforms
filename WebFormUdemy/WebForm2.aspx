@@ -7,8 +7,9 @@
     <meta charset="utf-8" />
     <title>Título da página</title>
 
-    <link rel="stylesheet" href="CssSheets/folhaEstilo.css"/>
-    
+    <link rel="stylesheet" href="FolhasEstilo/folhaEstilo.css" />
+
+
 
 </head>
 <body>
@@ -23,21 +24,35 @@
 
         <div class="centro" runat="server">
 
-
             <div class="multiView" runat="server">
 
-                <asp:MultiView runat="server">
+                <div class="divRadioButton" runat="server">
+                    <asp:RadioButtonList runat="server" ID="rbuton" OnSelectedIndexChanged="rbMasc_CheckedChanged" Width="187px" AutoPostBack="True">
+                        <asp:ListItem Value="0">Masculino</asp:ListItem>
+                        <asp:ListItem Value="1">Feminino</asp:ListItem>
+                    </asp:RadioButtonList>
+                </div>
+
+                <asp:MultiView ID="multiView" runat="server" ActiveViewIndex="0">
+
                     <asp:View runat="server">
-                       
+                        <asp:Panel BackColor="blue" runat="server">
+                            <asp:Label ID="Label1" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
+                            <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
+                            <asp:Button ID="botao1" runat="server" Height="20px" Text="Botao" Width="69px" />
+                        </asp:Panel>
                     </asp:View>
 
+                    <asp:View runat="server">
+                        <asp:Panel BackColor="yellow" runat="server">
+                            <asp:Label ID="Label2" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
+                            <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
+                            <asp:Button ID="botao2" runat="server" Height="20px" Text="Botao" Width="69px" />
+                        </asp:Panel>
+                    </asp:View>
 
                 </asp:MultiView>
-
-
-
             </div>
-
 
         </div>
 

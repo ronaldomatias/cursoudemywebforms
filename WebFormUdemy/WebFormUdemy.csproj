@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FolhasEstilo\folhaEstilo.css" />
     <Content Include="Imagens\Logotipo IBID Alta Resolucao.png" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
