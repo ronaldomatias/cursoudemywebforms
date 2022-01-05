@@ -15,16 +15,6 @@ namespace WebFormUdemy
 
         }
 
-        protected void rbMasc_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rbuton.SelectedValue == "0")
-            {
-                lblSexo.Text = "tchau";
-            }
-            else if(rbuton.SelectedValue == "1")
-            {
-                lblSexo.Text = "oi";
-            }
-        }
+       
     }
 }

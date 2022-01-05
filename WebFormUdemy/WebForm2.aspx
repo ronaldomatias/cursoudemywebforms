@@ -8,37 +8,93 @@
     <title>Título da página</title>
 
     <style>
-        .div1 {
-            display: block;
-            text-align: center;
-            background-color: palegreen;
-            height: 507px;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        .div2 {
-            display: inline-block;
+        .cabecalho {
+            width: 98%;
+            height: 150px;
+            background-color: orangered;
+            margin: 0 auto;
+        }
+
+        .esquerda {
+            height: 500px;
+            width: 350px;
+            background-color: green;
+            float: left;
+            margin-left: 70px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        .centro {
+            height: 500px;
+            width: 500px;
+            background-color: lightgrey;
+            float: left;
+            margin-top: 5px;
             text-align: center;
-            background-color: forestgreen;
-            height: 155px;
-            width: 191px;
+        }
+
+        .direita {
+            height: 500px;
+            width: 350px;
+            float: left;
+            background-color: lightseagreen;
+            margin: 5px;
+            margin-bottom: 0;
+        }
+
+        .rodape {
+            width: 98%;
+            height: 100px;
+            background-color: pink;
+            clear: both;
+            margin: 0 auto;
+        }
+
+        .cadastro {
+            display: inline-block;
+            width: 209px;
         }
     </style>
 
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="div1" runat="server">
-            <h1 id="titulo" runat="server">Aulas WebForms</h1>
 
-            <div class="div2" runat="server">
-                    <asp:RadioButtonList runat="server" ID="rbuton" AutoPostBack="True" OnSelectedIndexChanged="rbMasc_CheckedChanged" Width="187px">
-                        <asp:ListItem Value="0">Masculino</asp:ListItem>
-                        <asp:ListItem Value="1">Feminino</asp:ListItem>
-                    </asp:RadioButtonList>
-                <asp:Label ID="lblSexo" runat="server">Escolha</asp:Label>
-            </div>
-
+        <div class="cabecalho" runat="server">
+            Header
         </div>
+        <div class="esquerda" runat="server">
+            Esquerda
+        </div>
+
+        <div class="centro" runat="server">
+            <div class="cadastro" runat="server">
+                <asp:Label Text="Nome:" runat="server"></asp:Label>
+                <br />
+                <asp:TextBox runat="server" Width="200px"></asp:TextBox>
+                <br />
+                <asp:Label Text="E-mail:" runat="server"></asp:Label>
+                <br />
+                <asp:TextBox runat="server" Width="200px"></asp:TextBox>
+                <br />
+                <br />
+                <asp:Button Text="Enviar" Width="80px" runat="server" />
+            </div>
+        </div>
+
+        <div class="direita" runat="server">
+            Direita
+        </div>
+        <div class="rodape" runat="server">
+            Rodapé
+        </div>
+
     </form>
 </body>
 </html>
