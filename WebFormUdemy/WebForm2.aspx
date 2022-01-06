@@ -15,7 +15,9 @@
 
         <div class="cabecalho">
             <div class="divTeste">
+                <asp:TextBox ID="textBox" runat="server"></asp:TextBox>
                 <asp:Button ID="botao" OnClick="Cliquei" runat="server" Text="Clicar" Width="100%" />
+                <asp:Label ID="label" runat="server">Label</asp:Label>
             </div>
         </div>
 

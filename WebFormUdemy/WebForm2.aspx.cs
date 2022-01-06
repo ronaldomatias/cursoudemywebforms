@@ -17,9 +17,7 @@ namespace WebFormUdemy
 
         protected void Cliquei(object sender, EventArgs e)
         {
-            Response.Write("Browser: " + Request.UserAgent);
-            Response.Write("Url: " + Request.Url);
-            Response.Write("User Host Name: " + Request.UserHostName);
+            label.Text = Request["textBox"];
         }
     }
 }
