@@ -1,4 +1,6 @@
-﻿* {
+﻿@charset "utf-8";
+
+* {
     margin: 0 0 0 0px;
     margin: 0;
     padding: 0;
@@ -8,12 +10,6 @@ body {
     background-color: purple;
 }
 
-.divTeste {
-    background-color: palevioletred;
-    margin: 0 auto;
-    max-width: 40%;
-    min-width: 20%;
-}
 
 .cabecalho {
     display: flex;
@@ -24,48 +20,80 @@ body {
     height: 80px;
     background-color: black;
     align-items: center;
-    text-align:center;
+    justify-content: space-between;
 }
 
-    .cabecalho img {
-        height: 80px;
-        width: 100px;
-        margin: 5px;
-    }
-
-.menu {
-    padding: 60px;
+.logo img {
+    height: 90px;
+    max-width: 100%;
+    min-width: 40%;
 }
 
-    .menu a {
-        padding: 10px;
-        align-items: center;
-        font-size: 20px;
+.botoesMenu {
+    display: flex;
+    padding: 0px;
+    align-items: center;
+}
+
+    .botoesMenu a {
+        font-size: 22px;
         text-decoration: none;
-        color: burlywood;
+        color: white;
+        background-color: black;
+        border-radius: 7px;
+        padding: 5px;
+        margin: 0 5px;
     }
 
-        .menu a:hover {
+        .botoesMenu a:hover {
             background-color: white;
             color: black;
         }
 
+
+
 .centro {
-    background-color: lightgrey;
+    display: flex;
+    background-color: black;
     padding: 10px;
     margin: 5px auto;
     border-radius: 10px;
     min-width: 320px;
     max-width: 97%;
+    height: 450px;
 }
 
-.divImagem {
-    margin: 40px auto;
-    text-align: center;
+.formulario {
+    display: inline-block;
+    background-color: firebrick;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 15px;
+    min-width: 35%;
+    max-width: 100%;
 }
 
-    .divImagem img {
-        min-width: 30%;
-        max-width: 70%;
-        border-radius: 10px;
+    .formulario .txtNome {
+        height: 20px;
+        width: 50%;
+        margin: 10px;
+    }
+    .formulario .lblNome {
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+.divFlex {
+    display: flex;
+    align-items: center;
+}
+
+    .divFlex .btnEnviar {
+        width: 40%;
+        background-color: yellowgreen;
+        border-radius: 5px;
+        border-style: none;
+        margin: 10px auto;
     }
