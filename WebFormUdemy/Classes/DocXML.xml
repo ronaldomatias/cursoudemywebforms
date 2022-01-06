@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+Este arquivo xml será chamado pela propriedade(AdvertisementFile) do AdRotator e deve implementar estas 3 propriedades;
+O ADRotator serve para que a cada load da página, uma imagem diferente seja carregada, de maneira aleatória. Mas não necessariamente precisa ser aleatório, pois
+é possível colocar uma prioridade entre os itens(Ad) utilizando a tag Impressions.
+Nesse exemplo a imagem Guarda1.jpg aparecerá mais vezes que a Albatriz.jpg
+
+<Advertisementes>
+	<Ad>
+		<AlternateText>Texto alternativo 1</AlternateText>
+		<ImageUrl >Imagens/Guarda1.jpg</ImageUrl>
+		<NavigateUrl>http://www.facebook.com</NavigateUrl>
+		<Impressions>50</Impressions>
+	</Ad>
+	<Ad>
+		<AlternateText>Texto alternativo 2</AlternateText>
+		<ImageUrl >Imagens/Albatroz.jpg</ImageUrl>
+		<NavigateUrl>http://www.google.com</NavigateUrl>
+		<Impressions>20</Impressions>
+	</Ad>
+</Advertisementes>

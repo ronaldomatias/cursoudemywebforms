@@ -4,15 +4,16 @@
 }
 
 body {
-    background-color: purple;
+    background-color: black;
+    min-width: 50%;
+    max-width: 100%;
 }
 
 .cabecalho {
     display: flex;
-    margin: 5px auto;
-    border-radius: 10px;
+    margin: 0 auto;
     min-width: 50%;
-    max-width: 97%;
+    max-width: 100%;
     padding: 10px;
     height: 80px;
     background-color: black;
@@ -28,6 +29,7 @@ body {
 
 .menu {
     padding: 60px;
+    width: 100%;
 }
 
     .menu a {
@@ -46,7 +48,7 @@ body {
 .centro {
     background-color: lightgrey;
     padding: 10px;
-    margin: 5px auto;
+    margin: 1px auto;
     border-radius: 10px;
     min-width: 320px;
     max-width: 97%;

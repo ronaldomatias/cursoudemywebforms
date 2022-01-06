@@ -12,29 +12,34 @@
 </head>
 <body>
 
-    <div class="cabecalho" runat="server">
-        <img src="/Imagens/Logotipo IBID Alta Resolucao.png" />
-        <div class="menu">
-            <a href="#">Comprar</a>
-            <a href="#">Fale Conosco</a>
-            <a href="#">Minha Conta</a>
-        </div>
-    </div>
+    <form id="form1" runat="server">
 
-    <div class="centro" runat="server">
-        <h1 style="text-align: center;">Origem do país que chamamos de Brasil</h1>
-        <p style="margin-top: 20px; text-align: left">
-            A História do Brasil começa com a chegada dos primeiros humanos na América do Sul há pelo menos 22 000 anos AP. 
+        <div class="cabecalho" runat="server">
+            <img src="/Imagens/Logotipo IBID Alta Resolucao.png" />
+            <asp:AdRotator ID="AdRotator1" runat="server" />
+            <div class="menu">
+                <a href="#">Comprar</a>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Minha Conta</a>
+            </div>
+        </div>
+
+        <div class="centro" runat="server">
+            <h1 style="text-align: center;">Origem do país que chamamos de Brasil</h1>
+            <p style="margin-top: 20px; text-align: left">
+                A História do Brasil começa com a chegada dos primeiros humanos na América do Sul há pelo menos 22 000 anos AP. 
             Em fins do século XV, quando do Tratado de Tordesilhas, toda a área hoje conhecida como Brasil era habitada por
             tribos seminômades que subsistiam da caça, pesca, coleta e agricultura.
             A História do Brasil começa com a chegada dos primeiros humanos na América do Sul há pelo menos 22 000 anos AP. 
             Em fins do século XV, quando do Tratado de Tordesilhas, toda a área hoje conhecida como Brasil era habitada por
             tribos seminômades que subsistiam da caça, pesca, coleta e agricultura. 
-        </p>
-        <div class="divImagem" runat="server">
-            <img src="/Imagens/VAC 25.07.jpg" style="text-align: center" />
+            </p>
+            <div class="divImagem" runat="server">
+                <img src="/Imagens/VAC 25.07.jpg" style="text-align: center" />
+            </div>
         </div>
-    </div>
+
+    </form>
 
 </body>
 </html>
