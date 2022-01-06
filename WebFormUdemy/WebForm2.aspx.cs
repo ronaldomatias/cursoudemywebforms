@@ -17,7 +17,7 @@ namespace WebFormUdemy
 
         protected void Cliquei(object sender, EventArgs e)
         {
-            label.Text = Request["textBox"];
+            label.Text = Request.Form["textBox"];
         }
     }
 }
