@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="FolhasEstilo\folhaEstilo.css" />
     <Content Include="Imagens\Logotipo IBID Alta Resolucao.png" />
+    <Content Include="Imagens\VAC 25.07.jpg" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>

@@ -1,67 +1,68 @@
 ﻿* {
-    margin: 0 0 0 0px;
+    margin: 0;
     padding: 0;
 }
 
-.cabecalho {
-    width: 98%;
-    height: 150px;
-    background-color: orangered;
-    margin: 0 auto;
+body {
+    background-color: purple;
 }
 
-.esquerda {
-    height: 500px;
-    width: 350px;
-    background-color: green;
-    float: left;
-    margin-left: 70px;
-    margin-top: 5px;
-    margin-right: 5px;
+.cabecalho {
+    display: flex;
+    margin: 5px auto;
+    border-radius: 10px;
+    min-width: 50%;
+    max-width: 97%;
+    padding: 10px;
+    height: 80px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
 }
+
+    .cabecalho img {
+        height: 80px;
+        width: 100px;
+        margin: 5px;
+    }
+
+.menu {
+    padding: 60px;
+}
+
+    .menu a {
+        padding: 5px;
+        align-items: center;
+        font-size: 20px;
+        text-decoration: none;
+        color: burlywood;
+    }
+
+        .menu a:hover {
+            background-color: white;
+            color: black;
+        }
 
 .centro {
-    height: 500px;
-    width: 500px;
     background-color: lightgrey;
-    float: left;
-    margin-top: 5px;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 97%;
+}
+
+    .centro p {
+        margin: 0 100px;
+    }
+
+.divImagem {
+    margin: 40px auto;
     text-align: center;
 }
 
-.divRadioButtonExterna {
-    text-align: center;
-    background-color: cornflowerblue;
-    height: 50px;
-    margin: 0 auto;
-}
-.divRadioButtonInterna {
-    background-color: cornflowerblue;
-    margin: 0 auto;
-    margin-left: 170px;
-    margin-right: 200px;
-    text-align: left;
-}
-
-.direita {
-    height: 500px;
-    width: 350px;
-    float: left;
-    background-color: lightseagreen;
-    margin: 5px;
-    margin-bottom: 0;
-}
-
-.rodape {
-    width: 98%;
-    height: 100px;
-    background-color: pink;
-    clear: both;
-    margin: 0 auto;
-}
-
-multiView {
-    width: 278px;
-    margin: 0 auto;
-    height: 41px;
-}
+    .divImagem img {
+        min-width: 30%;
+        max-width: 70%;
+        border-radius: 10px;
+    }

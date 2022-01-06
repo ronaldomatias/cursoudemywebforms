@@ -9,59 +9,32 @@
 
     <link rel="stylesheet" href="FolhasEstilo/folhaEstilo.css" />
 
-
-
 </head>
 <body>
-    <form id="form1" runat="server">
 
-        <div class="cabecalho" runat="server">
-            Header
+    <div class="cabecalho" runat="server">
+        <img src="/Imagens/Logotipo IBID Alta Resolucao.png" />
+        <div class="menu">
+            <a href="#">Comprar</a>
+            <a href="#">Fale Conosco</a>
+            <a href="#">Minha Conta</a>
         </div>
-        <div class="esquerda" runat="server">
-            Esquerda
+    </div>
+
+    <div class="centro" runat="server">
+        <h1 style="text-align: center;">Origem do país que chamamos de Brasil</h1>
+        <p style="margin-top: 20px; text-align: left">
+            A História do Brasil começa com a chegada dos primeiros humanos na América do Sul há pelo menos 22 000 anos AP. 
+            Em fins do século XV, quando do Tratado de Tordesilhas, toda a área hoje conhecida como Brasil era habitada por
+            tribos seminômades que subsistiam da caça, pesca, coleta e agricultura.
+            A História do Brasil começa com a chegada dos primeiros humanos na América do Sul há pelo menos 22 000 anos AP. 
+            Em fins do século XV, quando do Tratado de Tordesilhas, toda a área hoje conhecida como Brasil era habitada por
+            tribos seminômades que subsistiam da caça, pesca, coleta e agricultura. 
+        </p>
+        <div class="divImagem" runat="server">
+            <img src="/Imagens/VAC 25.07.jpg" style="text-align: center" />
         </div>
+    </div>
 
-        <div class="centro" runat="server">
-            <div class="divRadioButtonExterna" runat="server">
-
-                <div class="divRadioButtonInterna" runat="server">
-                    <asp:RadioButtonList runat="server" ID="rbuton" OnSelectedIndexChanged="rbMasc_CheckedChanged" AutoPostBack="True">
-                        <asp:ListItem Value="0">Masculino</asp:ListItem>
-                        <asp:ListItem Value="1">Feminino</asp:ListItem>
-                    </asp:RadioButtonList>
-                </div>
-
-            </div>
-            <br />
-            <div class="divMultiView">
-                <asp:MultiView ID="multiView" runat="server" ActiveViewIndex="0">
-                    <asp:View runat="server">
-                        <asp:Panel BackColor="blue" runat="server">
-                            <asp:Label ID="Label1" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
-                            <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
-                            <asp:Button ID="botao1" runat="server" Height="20px" Text="Botao" Width="69px" />
-                        </asp:Panel>
-                    </asp:View>
-                    <asp:View runat="server">
-                        <asp:Panel BackColor="yellow" runat="server">
-                            <asp:Label ID="Label2" runat="server" Text="Bem-vindo! Insira seu nome."></asp:Label>
-                            <asp:TextBox Text="Insira seu nome" runat="server"></asp:TextBox>
-                            <asp:Button ID="botao2" runat="server" Height="20px" Text="Botao" Width="69px" />
-                        </asp:Panel>
-                    </asp:View>
-                </asp:MultiView>
-            </div>
-
-        </div>
-
-        <div class="direita" runat="server">
-            Direita
-        </div>
-        <div class="rodape" runat="server">
-            Rodapé
-        </div>
-
-    </form>
 </body>
 </html>
