@@ -12,7 +12,8 @@ namespace WebFormUdemy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            botao.Attributes.Add("onClick", "javascript: return confirm('Você foi alertado!')");
+            botao.Attributes.Add("onMouseOver ", "javascript: return alert('Passou o mouse por cima!')");
+
         }
 
     }
