@@ -12,7 +12,7 @@ namespace WebFormUdemy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            botao.Attributes.Add("onClick", "javascript: return alert('Você foi alertado!')");
         }
 
     }
