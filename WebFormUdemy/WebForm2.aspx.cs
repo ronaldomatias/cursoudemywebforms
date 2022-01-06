@@ -12,9 +12,14 @@ namespace WebFormUdemy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            botao.Attributes.Add("onMouseOver ", "javascript: return alert('Passou o mouse por cima!')");
-
         }
 
+
+        protected void Cliquei(object sender, EventArgs e)
+        {
+            Response.Write("Browser: " + Request.UserAgent);
+            Response.Write("Url: " + Request.Url);
+            Response.Write("User Host Name: " + Request.UserHostName);
+        }
     }
 }
