@@ -14,7 +14,9 @@
     <form id="form1" runat="server">
 
         <div class="cabecalho">
-            <asp:Button id="botao" runat="server" Text="Clicar" Width="200px"/>
+            <div class="divTeste">
+                <asp:Button ID="botao" runat="server" Text="Clicar" Width="100%" />
+            </div>
         </div>
 
     </form>

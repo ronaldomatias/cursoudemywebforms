@@ -8,17 +8,24 @@ body {
     background-color: purple;
 }
 
+.divTeste {
+    background-color: palevioletred;
+    margin: 0 auto;
+    max-width: 40%;
+    min-width: 20%;
+    padding: 2px;
+}
+
 .cabecalho {
     display: flex;
     margin: 5px auto;
     border-radius: 10px;
-    min-width: 50%;
     max-width: 97%;
     padding: 10px;
     height: 80px;
     background-color: black;
-    justify-content: space-between;
     align-items: center;
+    text-align:center;
 }
 
     .cabecalho img {
