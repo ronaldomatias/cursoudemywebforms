@@ -70,7 +70,7 @@ body {
 }
 
 .formulario {
-    display: inline-block;
+    display: flex;
     background-color: indigo;
     height: 250px;
     border-radius: 10px;

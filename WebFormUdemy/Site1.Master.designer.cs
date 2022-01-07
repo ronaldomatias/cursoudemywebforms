@@ -7,12 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebFormUdemy.Forms
+namespace WebFormUdemy
 {
 
 
-    public partial class WebForm1
+    public partial class Site1
     {
+
+        /// <summary>
+        /// head control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
         /// form1 control.
@@ -24,26 +33,12 @@ namespace WebFormUdemy.Forms
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblNomePagina2 control.
+        /// conteudo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNomePagina2;
-
-        /// <summary>
-        /// PreviousPage property.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated property.
-        /// </remarks>
-        public new WebFormUdemy.WebForm2 PreviousPage
-        {
-            get
-            {
-                return ((WebFormUdemy.WebForm2)(base.PreviousPage));
-            }
-        }
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder conteudo;
     }
 }

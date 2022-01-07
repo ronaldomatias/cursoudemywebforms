@@ -23,7 +23,6 @@
                 <a href="#">Comprar</a>
                 <a href="#">Fale Conosco</a>
                 <a href="#">Minha Conta</a>
-                <a href="#"><%=numero%></a>
             </div>
 
         </div>
