@@ -31,5 +31,19 @@ namespace WebFormUdemy.Forms
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblNomePagina2;
+
+        /// <summary>
+        /// PreviousPage property.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated property.
+        /// </remarks>
+        public new WebFormUdemy.WebForm2 PreviousPage
+        {
+            get
+            {
+                return ((WebFormUdemy.WebForm2)(base.PreviousPage));
+            }
+        }
     }
 }

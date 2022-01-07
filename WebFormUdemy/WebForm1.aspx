@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebFormUdemy.Forms.WebForm1" %>
+<%@ PreviousPageType VirtualPath="~/WebForm2.aspx" %>
 
 <!DOCTYPE html>
 

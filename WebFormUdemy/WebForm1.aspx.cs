@@ -11,16 +11,11 @@ namespace WebFormUdemy.Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.PreviousPage != null)
-            {
-                TextBox txBox = (TextBox)Page.PreviousPage.FindControl("txtNome");
-
-                if (txBox != null)
-                {
-                    lblNomePagina2.Text = txBox.Text;
-                }
-            }
-
+            lblNomePagina2.Text = PreviousPage.txtBox.ToString();
         }
+
+
+        
     }
+
 }
