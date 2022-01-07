@@ -11,7 +11,7 @@ namespace WebFormUdemy.Forms
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblNomePagina2.Text = "O seu nome é: "+ Request["txtNome"];
         }
     }
 }

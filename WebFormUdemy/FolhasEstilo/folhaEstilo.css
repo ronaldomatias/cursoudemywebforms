@@ -74,23 +74,29 @@ body {
     max-width: 100%;
 }
 
-    .formulario .txtNome {
+.divInformacoes {
+    display: flex;
+    justify-content: center;
+}
+
+    .divInformacoes .txtNome {
         height: 20px;
-        width: 50%;
-        margin: 10px;
-    }
-    .formulario .lblNome {
-        color: white;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20px;
     }
 
-.divFlex {
+    .divInformacoes .lblNome {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-right: 10px;
+    }
+
+
+.divBotoes {
     display: flex;
     align-items: center;
 }
 
-    .divFlex .btnEnviar {
+
+    .divBotoes .btnEnviar {
         width: 40%;
         background-color: yellowgreen;
         border-radius: 5px;

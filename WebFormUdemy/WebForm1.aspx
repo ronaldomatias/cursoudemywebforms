@@ -14,7 +14,27 @@
     <form id="form1" runat="server">
 
         <div class="cabecalho">
-             <h1>Titulo da página</h1>
+
+            <div class="logo" runat="server">
+                <img src="/Imagens/Logotipo IBID Alta Resolucao.png" />
+            </div>
+
+            <div class="botoesMenu">
+                <a href="#">Comprar</a>
+                <a href="#">Fale Conosco</a>
+                <a href="#">Minha Conta</a>
+            </div>
+
+        </div>
+
+        <div class="centro" runat="server">
+            <div class="formulario" runat="server">
+
+                <div class="divInformacoes" runat="server">
+                    <asp:Label CssClass="lblNome" ID="lblNomePagina2"  runat="server">Nome:</asp:Label>
+                </div>
+
+            </div>
         </div>
 
     </form>

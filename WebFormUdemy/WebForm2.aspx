@@ -18,27 +18,31 @@
             <div class="logo" runat="server">
                 <img src="/Imagens/Logotipo IBID Alta Resolucao.png" />
             </div>
+
             <div class="botoesMenu">
                 <a href="#">Comprar</a>
                 <a href="#">Fale Conosco</a>
                 <a href="#">Minha Conta</a>
             </div>
+
         </div>
 
         <div class="centro" runat="server">
+            
             <div class="formulario" runat="server">
 
-                <div class="divFlex" runat="server">
-                    <asp:Label CssClass="lblNome" runat="server">Nome:</asp:Label>
+                <div class="divInformacoes" runat="server">
+                    <asp:Label CssClass="lblNome" ID="lblNomePagina1" runat="server">Nome:</asp:Label>
                     <asp:TextBox CssClass="txtNome" ID="txtNome" runat="server"></asp:TextBox>
                 </div>
 
-                <div class="divFlex" runat="server">
-                    <asp:Button CssClass="btnEnviar" ID="btnEnviar" Text="Enviar" runat="server" />
+                <div class="divBotoes" runat="server">
+                    <asp:Button CssClass="btnEnviar" ID="btnEnviar" Text="Enviar" runat="server" PostBackUrl="~/WebForm1.aspx" />
                     <asp:Button CssClass="btnEnviar" ID="btnCancelar" Text="Cancelar" runat="server" />
                 </div>
-            
+
             </div>
+
         </div>
 
     </form>
