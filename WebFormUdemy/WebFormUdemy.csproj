@@ -74,38 +74,30 @@
     <Content Include="Imagens\Logotipo IBID Alta Resolucao.png" />
     <Content Include="Imagens\Trampo2.jpg" />
     <Content Include="Imagens\VAC 25.07.jpg" />
+    <Content Include="PaginaPrincipal.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm3.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Pessoa.cs" />
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="PaginaPrincipal.cs">
+      <DependentUpon>PaginaPrincipal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="PaginaPrincipal.aspx.designer.cs">
+      <DependentUpon>PaginaPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginaModelo.Master.cs">
+      <DependentUpon>PaginaModelo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginaModelo.Master.designer.cs">
+      <DependentUpon>PaginaModelo.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
+    <Content Include="PaginaModelo.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

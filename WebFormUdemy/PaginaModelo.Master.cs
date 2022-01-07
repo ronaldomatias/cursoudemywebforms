@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebFormUdemy
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class PaginaModelo : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
