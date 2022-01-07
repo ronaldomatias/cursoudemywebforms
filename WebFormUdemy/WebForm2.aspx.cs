@@ -10,15 +10,11 @@ namespace WebFormUdemy
 {
     public partial class WebForm2 : System.Web.UI.Page
     {
+        public int numero = 2;
+
         protected void Page_Load(object sender, EventArgs e)
         {
         }
 
-        public string txtBox
-        {
-            get{
-                return txtNome.Text;
-            }
-        }
     }
 }
