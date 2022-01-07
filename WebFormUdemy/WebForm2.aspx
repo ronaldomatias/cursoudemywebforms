@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <form id="form2" runat="server">
+    <form id="form2" method="post" runat="server">
 
         <div class="cabecalho">
 
@@ -38,7 +38,6 @@
 
                 <div class="divBotoes" runat="server">
                     <asp:Button CssClass="btnEnviar" ID="btnEnviar" Text="Enviar" runat="server" PostBackUrl="~/WebForm1.aspx" />
-                    <asp:Button CssClass="btnEnviar" ID="btnCancelar" Text="Cancelar" runat="server" />
                 </div>
 
             </div>

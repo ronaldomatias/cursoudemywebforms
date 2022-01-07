@@ -7,10 +7,11 @@
 }
 
 body {
-    background-color: purple;
+    background-color: indigo;
 }
 
 
+/*CABEÇALHO*/
 .cabecalho {
     display: flex;
     margin: 5px auto;
@@ -37,21 +38,24 @@ body {
 
     .botoesMenu a {
         font-size: 22px;
+        font-family: Rockwell;
         text-decoration: none;
-        color: white;
-        background-color: black;
+        color: black;
+        background-color: cornflowerblue;
         border-radius: 7px;
         padding: 5px;
         margin: 0 5px;
     }
 
         .botoesMenu a:hover {
-            background-color: white;
+            background-color: cornflowerblue;
             color: black;
+            transition: 0.1s;
+            border: 3px groove;
         }
 
 
-
+/*CENTRO*/
 .centro {
     display: flex;
     background-color: black;
@@ -65,7 +69,7 @@ body {
 
 .formulario {
     display: inline-block;
-    background-color: firebrick;
+    background-color: green;
     height: 250px;
     border-radius: 10px;
     margin: 20px auto;
@@ -77,6 +81,7 @@ body {
 .divInformacoes {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
     .divInformacoes .txtNome {
@@ -84,7 +89,7 @@ body {
     }
 
     .divInformacoes .lblNome {
-        color: white;
+        color: black;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         margin-right: 10px;
     }
@@ -92,7 +97,7 @@ body {
 
 .divBotoes {
     display: flex;
-    align-items: center;
+    margin-top: 40px;
 }
 
 
@@ -101,5 +106,5 @@ body {
         background-color: yellowgreen;
         border-radius: 5px;
         border-style: none;
-        margin: 10px auto;
+        margin: 0 auto;
     }
