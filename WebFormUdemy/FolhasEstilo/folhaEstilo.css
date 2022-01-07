@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: indigo;
+    background-color: black;
 }
 
 
@@ -19,9 +19,10 @@ body {
     max-width: 97%;
     padding: 10px;
     height: 80px;
-    background-color: black;
+    background-color: indigo;
     align-items: center;
     justify-content: space-between;
+    min-width: 70%;
 }
 
 .logo img {
@@ -40,18 +41,19 @@ body {
         font-size: 22px;
         font-family: Rockwell;
         text-decoration: none;
-        color: black;
-        background-color: cornflowerblue;
-        border-radius: 7px;
-        padding: 5px;
+        color: white;
+        background-color: black;
+        border-radius: 5px;
+        padding: 3px;
         margin: 0 5px;
     }
 
         .botoesMenu a:hover {
-            background-color: cornflowerblue;
-            color: black;
             transition: 0.1s;
-            border: 3px groove;
+            border: 2px groove;
+            opacity: 0.8;
+            background-color: yellowgreen;
+            color: black;
         }
 
 
@@ -69,7 +71,7 @@ body {
 
 .formulario {
     display: inline-block;
-    background-color: green;
+    background-color: indigo;
     height: 250px;
     border-radius: 10px;
     margin: 20px auto;
@@ -108,3 +110,4 @@ body {
         border-style: none;
         margin: 0 auto;
     }
+

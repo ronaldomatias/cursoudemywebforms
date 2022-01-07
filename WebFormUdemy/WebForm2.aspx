@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <form id="form2" method="post" runat="server">
+    <form id="form2" runat="server">
 
         <div class="cabecalho">
 
@@ -28,7 +28,7 @@
         </div>
 
         <div class="centro" runat="server">
-            
+
             <div class="formulario" runat="server">
 
                 <div class="divInformacoes" runat="server">
