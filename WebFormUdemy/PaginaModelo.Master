@@ -19,11 +19,14 @@
                 <img src="/Imagens/Logotipo IBID Alta Resolucao.png" />
             </div>
 
-            <div class="botoesMenu">
-                <a href="#">Comprar</a>
-                <a href="#">Fale Conosco</a>
-                <a href="#">Minha Conta</a>
-            </div>
+            <nav class="botoesMenu" runat="server">
+                <ul>
+                    <li><a href="#">Comprar</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Minha Conta</a></li>
+                    <li><a href="#">Configurações</a></li>
+                </ul>
+            </nav>
         </div>
 
         <div class="centro" runat="server">

@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: indigo;
+    background-color: forestgreen;
 }
 
 
@@ -17,7 +17,6 @@ body {
     border-radius: 10px;
     max-width: 97%;
     padding: 10px;
-    height: 80px;
     background-color: black;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +25,7 @@ body {
 .logo img {
     height: 90px;
     max-width: 100%;
-    min-width: 40%;
+    min-width: 30%;
 }
 
 .botoesMenu {
@@ -35,24 +34,26 @@ body {
     align-items: center;
 }
 
-    .botoesMenu a {
-        font-size: 22px;
-        font-family: Rockwell;
-        text-decoration: none;
-        color: black;
-        background-color: mediumpurple;
-        border-radius: 7px;
-        padding: 5px;
-        margin: 0 5px;
+    .botoesMenu ul li {
+        display: inline-block;
+        max-width: 60%;
+        margin: 0 auto;
     }
 
-        .botoesMenu a:hover {
-            background-color: lawngreen;
+        .botoesMenu ul li a {
+            background-color: forestgreen;
+            padding: 0.4em;
+            border-radius: 0.2em;
+            font-size: 16px;
+            font-family: Rockwell;
+            text-decoration: none;
             color: black;
-            transition: 0.1s;
-            border: 3px groove;
-            opacity: 0.8;
         }
+
+            .botoesMenu ul li a:hover {
+                background-color: white;
+                opacity: 0.5;
+            }
 
 
 /*CENTRO*/
@@ -69,12 +70,12 @@ body {
 
 .formulario {
     display: inline-block;
-    background-color: rebeccapurple;
-    height: 250px;
+    background-color: aliceblue;
+    height: 300px;
     border-radius: 10px;
     margin: 20px auto;
     padding: 15px;
-    min-width: 35%;
+    min-width: 65%;
     max-width: 100%;
 }
 
@@ -108,4 +109,3 @@ body {
         border-style: none;
         margin: 0 auto;
     }
-
